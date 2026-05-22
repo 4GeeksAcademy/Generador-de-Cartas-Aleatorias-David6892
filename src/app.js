@@ -1,11 +1,16 @@
 import "bootstrap";
 import "./style.css";
 
+document.getElementById('carta').addEventListener('onload',carta)
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+function carta(){
+  
+  let simbolo1 = Math.floor[Math.random() * 6 ] + 1
+  let numeros = Math.floor[Math.random() * 6 ] + 1
+  let simbolo2 = Math.floor[Math.random() * 6 ] + 1
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  document.getElementById('simbolo1').innerText = simbolo1
+  document.getElementById('numeros').innerHTML = numeros
+  document.getElementById('simbolo2').innerText = simbolo2
+}
+
